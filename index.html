@@ -16,9 +16,7 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="cart">
-					<li class="cart-link-img"><img src="img/cart-icon.svg" alt="Иконка корзины"></li>
-					<!--Стоит ли делать картинку отдельным элементом списка? Стоит ли вообще фигачить иконку корзины в <img>?-->
-					<li class="cart-link"><a href="#" class="cart-link-href">Корзина</a></li>
+					<li class="cart-link"><a href="#" class="cart-link-href" aria-label="Ссылка на Вашу корзину"><img src="img/cart-icon.svg" alt="Иконка корзины">Корзина</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -27,33 +25,34 @@
 		
 			<h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
 			
-			<section class="slider-1">
-				<b class="tagline">Долго, дорого, скрупулёзно</b>
-				<p class="tagline-clarification">Математически выверенный дизайн 
-					для вашего сайта или мобильного приложения.</p>
-				<img src="" class="slider-1-img" alt="Картинка со смартфонами">
-			</section>
-			<section class="slider-2">
-				<b class="tagline">Любим математику как никто другой</b>
-				<p class="tagline-clarification">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<img src="" class="slider-2-img" alt="Картинка с мониторами">
-			</section>
-			<section class="slider-3">
-				<b class="tagline">Только ночь, только хардкор</b>
-				<p class="tagline-clarification">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<img src="" class="slider-3-img" alt="Картинка с планшетом и смартфоном">
-			</section>
+			<section class="slider">
+				<h2 class="visually-hidden">Слайдер со слоганами дизайн-студии "Nerds"</h2>
+				<ul class="slider-1">
+					<li><b class="tagline">Долго, дорого, скрупулёзно</b></li>
+					<li>Математически выверенный дизайн 
+					для вашего сайта или мобильного приложения.</li>
+					<li><img src="img/nerds-index-slide1.png" width="698" height="413" class="slider-1-img" alt="Картинка со смартфонами"></li>
+				</ul>
+				<ul class="slider-2">
+					<li><b class="tagline">Любим математику как никто другой</b></li>
+					<li>Никакого креатива, только математические формулы для расчета идеальных пропорций.</li>
+					<li><img src="img/nerds-index-slide2.png" width="663" height="430" class="slider-2-img" alt="Картинка с мониторами"></li>
+				</ul>	
+				<ul class="slider-3">
+					<li><b class="tagline">Только ночь, только хардкор</b></li>
+					<li>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</li>
+					<li><img src="img/nerds-index-slide3.png" width="759" height="411" class="slider-3-img" alt="Картинка с планшетом и смартфоном"></li>
+				</ul>	
 			
-			<button type="button" class="visually-hidden">Первая кнопка слайдера</button>
-			<button type="button" class="visually-hidden">Вторая кнопка слайдера</button>
-			<button type="button" class="visually-hidden">Третья кнопка слайдера</button>
-			<!--Или под каждым элементом списка своя кнопка?-->
-			
-			<a href="#" class="show-more">Узнать больше</a>
+			<button type="button" class="visually-hidden slider-button-1">Первая кнопка слайдера</button>
+			<button type="button" class="visually-hidden slider-button-2">Вторая кнопка слайдера</button>
+			<button type="button" class="visually-hidden slider-button-3">Третья кнопка слайдера</button>
+			<a href="#" class="slider-show-more">Узнать больше</a>
+			</section>
 			
 			<section class="features">
 			
-				<h2 class="visually-hidden">Услуги дизайн-студии</h2>
+				<h2 class="visually-hidden">Наши услуги</h2>
 				
 				<ul class="features-list">
 					<li>
@@ -105,13 +104,48 @@
 				</table>
 			</section>
 			<section class="partners">
+				<h2 class="visually-hidden">Наши партнёры</h2>
 				<ul class="partners-list">
-					<li><img class="partners-list-img" src="img/logo-1.png"></li>
-					<li><img class="partners-list-img" src="img/logo-2.png"></li>
-					<li><img class="partners-list-img" src="img/logo-3.png"></li>
-					<li><img class="partners-list-img" src="img/logo-4.png"></li>
+					<li><a href="#"><img class="partners-list-img" src="img/logo-1.png" width="260" height="180"></a></li>
+					<li><a href="#"><img class="partners-list-img" src="img/logo-2.png" width="260" height="180"></a></li>
+					<li><a href="#"><img class="partners-list-img" src="img/logo-3.png" width="260" height="180"></a></li>
+					<li><a href="#"><img class="partners-list-img" src="img/logo-4.png" width="260" height="180"></a></li>
 				</ul>
 			</section>
+			<section class="contacts">
+				<div class="contacts-adress">
+					<h2>Контакты дизайн-студии "Nerds"</h2>
+					<b>Nёrds design studio</b>
+					<p>191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная, д. 19/8<br> 
+					тел. +7 (812) 275-75-75
+					</p>
+					<button type="button">Напишите нам</button>	
+				</div>	
+				<form method="post" action="https://echo.htmlacademy.ru/" class="contacts-form">
+					<fieldset>
+						<legend>Напишите нам</legend>
+						<button aria-label="Закрыть форму обратной связи" type="button">x</button>
+						<label for="your-name">Ваше имя:</label>
+						<input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+						<label for="your-post">Ваш e-mail:</label>
+						<input type="email" name="post" id="your-post" placeholder="email@example.com">
+						<label for="mail-text">Текст письма:</label>
+						<textarea placeholder="В свободной форме" id="mail-text"></textarea>
+						<button class="contacts-button" type="submit">Отправить</button>
+					</fieldset>	
+				</form>
+				<img class="contacts-marker" src="img/map-marker.png" alt="Мы на карте">
+			</section>	
+			<footer class="main-footer">
+				<ul class="social-media" aria-label="Мы в соцсетях">
+					<li><a href="#"><img src="img/vk-icon.svg" alt="Наша группа Вконтакте"></a></li>
+					<li><a href="#"><img src="img/fb-icon.svg" alt="Наша группа в Facebook"></a></li>
+					<li><a href="#"><img src="img/insta-icon.svg" alt="Наш аккаунт в Instagram"></a></li>
+				</ul>
+				<b class="main-footer-text">Давайте дружить - это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</footer>		
 		</main>
 	</body>
 </html>
